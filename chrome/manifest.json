@@ -15,5 +15,6 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["contextMenus"]
+  "permissions": ["contextMenus"],
+  "homepage_url": "https://github.com/dvnlgls/Base64UrlDecoder"
 }
