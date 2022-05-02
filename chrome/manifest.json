@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Base64 Decoder",
+  "version": "1.0.0",
+
+  "description": "Decode a base64 URL and open in the tab to the right",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "author": "Devin",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["contextMenus"]
+}
