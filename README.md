@@ -13,3 +13,6 @@ Usage: Select a base64 url and right click to invoke the context menu. You will 
   - Get key and secret from https://addons.mozilla.org/en-US/developers/addon/api/key/
 - The process will take 10-15 mins. Wait!
 - The output will be in web-ext-artifacts -> .xpi file. (To install, select install addon from file)
+
+## Screenshot of the addon in action
+![Base64 URL Decoder & Opener](https://github.com/dvnlgls/Base64UrlDecoder/raw/master/screenshot/contextmenu.png)
