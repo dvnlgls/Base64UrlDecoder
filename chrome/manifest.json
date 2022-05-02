@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Base64 Decoder",
+  "name": "Base64 URL Decoder & Opener",
   "version": "1.0.0",
 
-  "description": "Decode a base64 URL and open in the tab to the right",
+  "description": "Decode a base64 URL (even encoded twice) and open it in the tab to the right.",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
