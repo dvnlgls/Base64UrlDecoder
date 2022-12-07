@@ -23,3 +23,8 @@ Usage: Select a base64 url and right click to invoke the context menu. You will 
 - The process will take 10-15 mins. Wait!
 - The output will be in web-ext-artifacts -> .xpi file. (To install, select install addon from file)
 
+## Tips for development
+
+### archiving for submission
+- If you want to make a zip without those invisible Mac resource files such as “_MACOSX” or “._Filename” and .ds store files, use the “-X” option in the command:
+  - `zip -r -X b64.zip ./` (make sure to zip from within the src folder. else the submission will be rejected)
