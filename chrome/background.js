@@ -7,7 +7,7 @@ function decodeBase64(event, twice) {
             }
             return decodedText;
         } catch (err) {
-            console.log('Something went wrong with Base64 decoding');
+            console.log('Base64 Decoder: check the b64 text. It may not be a valid base 64 input.');
         }
     }
 }
@@ -20,6 +20,13 @@ function openUrlToTheRight(url, currentTab) {
         index: tabIndex
     });
     createTab.then();
+}
+
+function fixOldLinkProtectorURL(url) {
+    if (url.indexOf('https://links.snahp.it/') >= 0) {
+        url = url.replace('links.snahp.it', 'lnk.snahp.eu');
+    }
+    return url;
 }
 
 chrome.contextMenus.create({
@@ -37,7 +44,9 @@ chrome.contextMenus.create({
 chrome.contextMenus.onClicked.addListener(function (info, tab) {
     const decodeTwice = info.menuItemId === "two";
     const decodedUrl = decodeBase64(info, decodeTwice);
+
     if (decodedUrl) {
-        openUrlToTheRight(decodedUrl, tab);
+        const formattedURL = fixOldLinkProtectorURL(decodedUrl);
+        openUrlToTheRight(formattedURL, tab);
     }
 });
