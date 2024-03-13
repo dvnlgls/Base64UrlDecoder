@@ -8,7 +8,7 @@ Usage: Select a base64 url and right click to invoke the context menu. You will 
 ## Get the extension from:
 #### Chrome: https://chrome.google.com/webstore/detail/base64-url-decoder-opener/dmjommdldlbamppffbonacmohmdlklmm
 
-#### Firefox: https://addons.mozilla.org/en-US/firefox/addon/base64-url-decoder-opener/
+#### Firefox: https://addons.mozilla.org/firefox/addon/base64-url-decoder-opener/
 
 ## Screenshot of the addon in action
 ![Base64 URL Decoder & Opener](https://github.com/dvnlgls/Base64UrlDecoder/raw/master/screenshot/contextmenu.jpg)
